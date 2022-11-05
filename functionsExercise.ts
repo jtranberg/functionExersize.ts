@@ -24,6 +24,8 @@
 function twofer(person: string = 'you'): string  {
     return `One for ${person}, one for me.`
 }
+console.log(twofer());
+console.log(twofer('Elvis'));
 
 const isLeapYear = (year: number): boolean => {
 if (year % 4 === 0 && year % 100 !== 0){
@@ -38,3 +40,7 @@ return false;
 const isLeapYear2 = (year: number): boolean => {
     return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0; 
     };
+    console.log(isLeapYear(2012));
+    console.log(isLeapYear(2013));
+    console.log(isLeapYear(2014));
+    console.log(isLeapYear(2015));

@@ -22,6 +22,8 @@ function twofer(person) {
     if (person === void 0) { person = 'you'; }
     return "One for ".concat(person, ", one for me.");
 }
+console.log(twofer());
+console.log(twofer('Elvis'));
 var isLeapYear = function (year) {
     if (year % 4 === 0 && year % 100 !== 0) {
         return true;
@@ -34,3 +36,7 @@ var isLeapYear = function (year) {
 var isLeapYear2 = function (year) {
     return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 };
+console.log(isLeapYear(2012));
+console.log(isLeapYear(2013));
+console.log(isLeapYear(2014));
+console.log(isLeapYear(2015));
